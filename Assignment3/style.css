@@ -1,0 +1,802 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1281px) {
+
+    *.nav-bar {
+        color: rgb(1, 57, 88);
+    }
+
+    .logo {
+        width: 80%;
+        height: auto;
+        margin-top: 30px;
+        padding-left: 40px;
+    }
+
+    .abstract-banner {
+        max-width: 100%;
+        height: auto;
+        background-image: url('./images/abstract-painting.png');
+        position: relative;
+        background-size: 100% 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .figcaption1 {
+        position: absolute;
+        display: inline-flexbox;
+        background-color: white;
+        color: black;
+        width: 20%;
+        height: 30px;
+        padding-top: 10px;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        padding-left: 40px;
+    }
+
+    .figcaption2 {
+        position: absolute;
+        display: inline-flexbox;
+        background-color: black;
+        color: white;
+        width: 50%;
+        height: 30px;
+        padding-top: 10px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        padding-left: 20px;
+    }
+
+    .abstract-caption {
+        text-align: center;
+        margin-top: 40px;
+        height: 400px;
+        padding-top: 50px;
+    }
+
+    #browser {
+        width: 200px;
+        padding: 15px;
+        border: solid;
+        border-radius: 8px;
+    }
+
+    #browser:hover {
+        color: white;
+        background-color: rgb(2, 63, 98);
+    }
+
+    /* .art {
+        width: 80%;
+        height: auto;
+    } */
+
+    #footer-nav {
+        display: flex;
+        align-items: space-evenly;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        width: 40%;
+        height: auto;
+        padding-left: 40px;
+    }
+
+    .footer-icon {
+        width: 15%;
+        height: auto;
+    }
+
+    #icons {
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(6, 103, 7);
+    }
+
+    /* GRIDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdddd */
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #nav {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+    }
+
+    #nav img {
+        vertical-align: middle;
+        padding: 1em;
+        padding-left: 2em;
+        width: 15%;
+    }
+
+    .abstract {
+        grid-column: 2 / span 4;
+        grid-row: 1 / span 2;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        padding: 1em;
+    }
+
+    .abstract-banner {
+        grid-column: 1/ span 1;
+    }
+
+    .abstract-caption {
+        grid-column: 2;
+    }
+
+    .card-group {
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 2;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 15% auto auto;
+        margin-left: 1em;
+        margin-bottom: 20em;
+    }
+
+    .featured {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .search {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .photo1 {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 80%;
+        height: 40%;
+        background-image: url('./images/monthly-art.png');
+        background-size: 100% 100%;
+    }
+
+    .content1 {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    .photo2 {
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 80%;
+        height: 40%;
+        background-image: url('./images/new-painting.png');
+        background-size: 100% 100%;
+    }
+
+    .content2 {
+        grid-column: 2;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    .photo3 {
+        grid-column: 3;
+        grid-row: 2;
+        max-width: 80%;
+        height: 40%;
+        background-image: url('./images/new-art.png');
+        background-size: 100% 100%;
+    }
+
+    .content3 {
+        grid-column: 3;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    .photo4 {
+        grid-column: 3;
+        grid-row: 2;
+        max-width: 80%;
+        height: 40%;
+        background-image: url('./images/figure.png');
+        background-size: 100% 100%;
+    }
+
+    .content4 {
+        grid-column: 4;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    footer {
+        grid-column: 1 / span 5;
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        height: 20%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    .footer-logo {
+        grid-column: 1;
+    }
+
+    .footer-nav {
+        grid-column: 2;
+    }
+
+    #icons {
+        grid-column: 3;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+
+@media screen and (max-width: 1280px) and (min-width: 701px) {
+
+
+    *.nav-bar {
+        color: rgb(1, 57, 88);
+    }
+
+    .nav-header { color:  rgb(3, 157, 152)  }
+
+    .logo {
+        width: 80%;
+        height: auto;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    .abstract-banner {
+        max-width: 100%;
+        height: auto;
+        background-image: url('./images/abstract-painting.png');
+        position: relative;
+        background-size: 100% 100%;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .figcaption1 {
+        position: absolute;
+        display: inline-flexbox;
+        background-color: white;
+        color: black;
+        width: 20%;
+        height: 30px;
+        padding-top: 10px;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .figcaption2 {
+        position: absolute;
+        display: inline-flexbox;
+        background-color: black;
+        color: white;
+        width: 50%;
+        height: 30px;
+        padding-top: 10px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+
+    .abstract-caption {
+        text-align: center;
+    }
+
+    #browser {
+        margin-top: 40px;
+        padding-top: 40px;
+        width: 200px;
+        padding: 15px;
+        border: solid;
+        border-radius: 8px;
+    }
+
+    #browser:hover {
+        color: white;
+        background-color: rgb(2, 63, 98);
+    }
+
+    #footer-nav {
+        display: flex;
+        align-items: space-evenly;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        width: 8%;
+        height: auto;
+        padding-left: 40px;
+    }
+
+    .footer-icon {
+        width: 30%;
+        height: auto;
+    }
+
+    #icons {
+        display: inline-block;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(3, 157, 152)  
+
+    }
+
+    /* GRIDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdddd */
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+
+    .logo {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    #nav {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin-left: 20px;
+    }
+
+    #nav img {
+        display: table-row;
+        padding-top: 2em;
+        width: 30%;
+    }
+
+    .abstract {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+        display: grid;
+        grid-template-rows: 70% 30%;
+        padding: 10px;
+    }
+
+    .abstract-banner {
+        grid-column: 1/ span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .abstract-caption {
+        grid-row: 2;
+    }
+
+    .card-group {
+        grid-column: 1 / span 4;
+        grid-row: 4 / span 2;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 10% auto auto;
+        margin: 10px;
+        margin-bottom: 20em;
+    }
+
+    .featured {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    .ft {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .search {
+        grid-column: 2;
+        grid-row: 1 / span 1;
+    }
+
+    .photo1 {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 80%;
+        height: 30%;
+        background-image: url('./images/monthly-art.png');
+        background-size: 100% 100%;
+    }
+
+    .content1 {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    .photo2 {
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 80%;
+        height: 30%;
+        background-image: url('./images/new-painting.png');
+        background-size: 100% 100%;
+    }
+
+    .content2 {
+        grid-column: 2;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    .photo3 {
+        grid-column: 3;
+        grid-row: 2;
+        max-width: 80%;
+        height: 30%;
+        background-image: url('./images/new-art.png');
+        background-size: 100% 100%;
+    }
+
+    .content3 {
+        grid-column: 3;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    .photo4 {
+        grid-column: 3;
+        grid-row: 2;
+        max-width: 80%;
+        height: 30%;
+        background-image: url('./images/figure.png');
+        background-size: 100% 100%;
+    }
+
+    .content4 {
+        grid-column: 4;
+        grid-row: 3;
+        max-width: 90%;
+    }
+
+    footer {
+        grid-column: 1 / span 5;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        height: 20%;
+        margin: 10px;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer-nav {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #icons {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        align-self: flex-end;
+    }
+}
+
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 700px) {
+
+    *.nav-bar {
+        color: rgb(1, 57, 88);
+    }
+
+    .nav-header { color:  rgb(3, 157, 152)  }
+    .logo {
+        width: 40%;
+        height: auto;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .abstract-banner {
+        max-width: 100%;
+        height: 400px;
+        background-image: url('./images/abstract-painting.png');
+        position: relative;
+        background-size: 100% 100%;
+    }
+
+    .abstract-caption {
+        text-align: center;
+        background-color: antiquewhite;
+        max-width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .figcaption1 {
+        position: absolute;
+        display: inline-flexbox;
+        background-color: white;
+        color: black;
+        width: 20%;
+        height: 20px;
+        padding: 10px;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+    }
+
+    .figcaption2 {
+        position: absolute;
+        display: inline-flexbox;
+        background-color: black;
+        color: white;
+        width: 50%;
+        height: 20px;
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #browser {
+        width: 10%;
+        padding: 10px;
+        border: solid;
+        border-radius: 5px;
+    }
+
+    #browser:hover {
+        color: white;
+        background-color: rgb(2, 63, 98);
+    }
+
+    #footer-nav {
+        display: flex;
+        align-items: space-evenly;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .footer-logo {
+        width: 10%;
+        height: auto;
+    }
+
+    .footer-icon {
+        width: 30%;
+        height: auto;
+    }
+
+    #icons {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(19, 168, 185)
+    }
+
+    /* GRIDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdddd */
+    .container {
+        font-size: 14pt;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 5vh auto auto auto auto auto auto auto auto auto;
+    }
+
+    .logo {
+        display: block;
+        align-self: center;
+        grid-column: 1;
+        grid-row: 2 / span 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nav {
+        grid-column: 1;
+        grid-row: 1 / span 1;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    #nav img {
+        display: none;
+    }
+
+    .abstract-banner {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
+
+    .abstract-caption {
+        grid-column: 1;
+        grid-row: 4 / span 1;
+    }
+
+    .card-group {
+        grid-column: 1;
+        grid-row: 5 / span 5;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 4% auto auto auto auto auto auto auto auto;
+    }
+
+    .featured {
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .photo1 {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 100%;
+        height: 300px;
+        background-image: url('./images/monthly-art.png');
+        background-size: 100% 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .content1 {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%;
+        margin: 30px;
+    }
+
+    .photo2 {
+        grid-column: 1;
+        grid-row: 4;
+        max-width: 100%;
+        height: 300px;
+        background-image: url('./images/new-painting.png');
+        background-size: 100% 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .content2 {
+        grid-column: 1;
+        grid-row: 5;
+        max-width: 100%;
+        margin: 30px
+    }
+
+    .category2 {
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .card-title2 {
+        padding-left: 30px;
+    }
+
+    .photo3 {
+        grid-column: 1;
+        grid-row: 6;
+        max-width: 100%;
+        height: 300px;
+        background-image: url('./images/new-art.png');
+        background-size: 100% 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .content3 {
+        grid-column: 1;
+        grid-row: 7;
+        max-width: 100%;
+        margin: 30px;
+    }
+
+    .category3 {
+        padding-left: 30px;
+    }
+
+    .card-title3 {
+        padding-left: 30px;
+    }
+
+    #author {
+        padding-left: 30px;
+    }
+
+    .photo4 {
+        grid-column: 1;
+        grid-row: 8;
+        max-width: 100%;
+        height: 300px;
+        background-image: url('./images/figure.png');
+        background-size: 100% 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .content4 {
+        grid-column: 1;
+        grid-row: 9;
+        max-width: 100%;
+        margin: 30px;
+        padding-bottom: 200px;
+    }
+
+    .category4 {
+        padding-left: 30px;
+    }
+
+    .card-title4 {
+        padding-left: 30px;
+    }
+
+    body>footer {
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer-nav {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #icons {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        align-self: flex-end;
+    }
+}

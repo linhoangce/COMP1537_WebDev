@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	
+	<head>
+		<title>Assignment 2 - CSS</title>
+		<meta charset="utf-8"/>
+		<style>
+		
+		@import url(https://fonts.googleapis.com);
+
+		body{
+			font-family: 'Cormorant Garamond', serif;
+			font-size: 14pt;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#heading-bar { display: table;}
+
+		#entry-title { font-weight: lighter; }
+
+		.section-title { font-weight: lighter;}
+		#main-content-body{
+			margin-left: 400px;
+			margin-right: 400px;
+		}
+
+		#content-table { 
+			background-color: rgb(0, 0, 0);
+			text-align: left; 
+			color: white;
+			padding-left: 150px;
+			padding-right: 150px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			margin-left: 0px;
+		}
+
+		#book-title {
+			background-color: gray;
+			text-align: center;
+			color: white;
+			padding-left: 200px;
+			padding-right: 220px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+		}
+
+		#white-space {
+			background-color: black;
+			padding-right: 400px;
+			padding-bottom: 20px;
+			padding-top: 10px;
+		}
+
+		
+		
+		#nav_menu {
+			text-align: right;
+			margin: 40px;
+		}
+
+		*.nav-text { color:rgb(180, 10, 10)}
+
+		*.border-nav-text {color: white }
+
+		.top-border {
+			background-color: rgb(180, 10, 10);
+			height: 30px;
+			padding-top: 1px;
+			padding-bottom: 30px;
+			text-align: right;
+			color: white;
+		}
+		
+		#summary {
+			background-color: rgb(219, 108, 17);
+			height: 50px;
+			margin-bottom: 0px;
+			padding: 3%;
+			color: white;
+		}
+
+		.summary-body{
+			background-color: rgb(241, 205, 175);
+			height: 250px;
+			margin-top: 0px;
+			padding: 3%;
+		}
+
+		#exercise{
+			background-color: rgb(10, 89, 163);
+			height: 50px;
+			margin-bottom: 0px;
+			padding: 3%;
+			color: white;
+		}
+
+		.exercise-questions{
+			background-color: rgb(205, 224, 242);
+			height: 150px;
+			margin-top: 0;
+			padding: 3%;
+		}
+
+		.bottom-border {
+			background-color: rgb(180, 10, 10);
+			height: 30px;
+			padding-top: 10px;
+			padding-bottom: 1px;
+			width: 100%;
+			display: table;
+		}
+
+		span[id='chapter1'] {
+			text-align: left;
+			margin-left: 40px;
+		}
+
+		span[id='chapter3'] {
+			margin-left: 700px;
+		}
+		
+		figure {
+			margin: 0 auto;
+			background-color: white;
+			text-align: center;
+		}
+
+		figure img {
+			align-self: center;
+		}
+
+		figure figcaption {
+			text-align: center;
+		}
+
+		form fieldset { background-color: antiquewhite; padding-left: 0px; margin-top: 40px; margin-bottom: 20px; text-align: center;}
+		
+		table { width: 100%; margin-bottom: 40px;}
+		tr > th { background-color: rgb(196, 199, 203); height: 40px; }
+
+		.member-info tr:nth-of-type(2n-1) { background-color: hsl(204, 19%, 95%);}
+
+		#footer { background-color: rgb(239, 239, 236); padding-top: 40px; padding-bottom: 40px;}
+
+		#license { margin-left: 150px; color: rgb(180, 10, 10);}
+
+		#share { margin-left: 600px; color: rgb(180, 10, 10);}
+
+		#logo { text-align: left; margin-left: 150px; background-color: rgb(239, 239, 236); width: 5px; height: 5px;}
+
+		#book-info { margin-top: 50px; margin-left: 150px;; width: 600px; text-align: justify; }
+
+		
+		</style>
+	</head>
+	
+	<body>
+		
+		<div id="nav_menu">
+			<nav>
+			<a class="nav-text" href="https://opentextbc.ca/dbdesign01/">Home</a>
+			<a class="nav-text" href="https://opentextbc.ca/dbdesign01/front-matter/preface/">Read</a>
+			<a class="nav-text" href="https://opentextbc.ca/dbdesign01/wp-login.php?redirect_to=https%3A%2F%2Fopentextbc.ca%2Fdbdesign01%2Fchapter%2Fchapter-3-characteristics-and-benefits-of-a-database%2F">Sign in</a>
+			</nav>
+		</div>
+		
+		<div class="top-border">
+			<p>Want to create or adapt books like this? <a class="border-nav-text" href="https://pressbooks.com/adapt-open-textbooks?utm_source=book&utm_medium=banner&utm_campaign=bbc">Learn more</a> 
+			about how Pressboooks supports open publishing practices. (x)</p>
+		</div>
+
+		<div id="heading-bar">
+			<span id="content-table">CONTENTS</span>
+			<span id="book-title">DATABASE DESIGN - 2ND EDITION</span>
+			<span id="white-space"></span>
+		</div>
+
+		<div id="main-content-body">
+		
+			<p style="text-align: right" id="body-indicator"><small>Main Body</small></p>
+		
+			<header>
+			<h1 id="entry-title">Chapter 2 Fundamental Concepts</h1>
+				<p id="author">ADRIENNE WATTS &amp; NELSON ENG</p>
+			</header>
+		
+			<br/>
+		
+			<h2 class="section-title">What is Database?</h2>
+		
+			<p>
+				A <em>database</em> is a shared collection of related data used to support the activities of a particular organization. A database can be viewed as a repository of data that is defined once and then accessed by various users as shown in <i>Figure 2.1.</i>
+			</p>
+		
+			<figure> 
+				<img src="https://opentextbc.ca/dbdesign01/wp-content/uploads/sites/11/2013/12/RDBMS-300x2091.jpg">
+				<figcaption>
+					<small><i>Figure 2.1. A database is a repository of data</i></small>
+				</figcaption>
+			</figure>
+	
+		
+			<br/>
+
+			<h2 class="section-title">Database Properties</h2>
+		
+			<p>A database has the following properties:</p>
+			<ul>
+				<li>It is a representation of some aspect of the real world or a collection of <em>data elements</em> (facts) representing real-world information.</li>
+				<li>A database is logical, coherent and internally consistent.</li>
+				<li>A database is designed, built and populated with data for a specific purpose.</li>
+				<li>Each data item is stored in a field.</li>
+				<li>A combination of fields makes up a <i>table</i>. For example, each field in an employee table contains data about an individual employee.</li>
+			</ul>
+		
+			<form>
+				<fieldset>
+					<legend>Membership</legend>
+					<input class="input" type="text" id="id" name="ID" placeholder="ID" autofocus="autofocus" pattern="[A-Z0-9a-z]" required="required" />
+					<input class="input" min="0" type="number" id="expdate" name="expiry date" placeholder="Expiry Date" required="required"/>
+					<input class="input" min="0" type="number" id="prevdate" name="prev date" placeholder="Prev Date" required="required"/>
+					<input class="input" type="text" id="stat" name="Stat" placeholder="Status" required="required"/>
+					<br/><br/>
+					<input class="input" type="text" id="title" name="Title" placeholder="Title" required="required"/>
+					<input class="input" type="text" id="lastname" name="LastN" placeholder="Last Name" pattern="[A-Za=z]" />
+					<input class="input" type="text" id="Firstname" name="FirstN" placeholder="First Name" pattern="[A-Za-z]" />
+					<input class="input" type="number" id="res" name="Res" placeholder="Res" required="required"/>
+				</fieldset>
+			</form>
+			
+			<table class="member-info">
+				<tr>
+				<th colspan="5">Member Information</th>
+				</tr>
+				
+				<tr>
+				<td>FirstNam</td>
+				<td>LastName</td>
+				<td>YYMM</td>
+				<td>BARCODE</td>
+				<td>DATE</td>
+				</tr>
+			
+				<tr>
+				<td>Micky</td>
+				<td>Mouse</td>
+				<td>0000</td>
+				<td>10000001</td>
+				<td>20130810</td>
+				</tr>
+			
+				<tr>
+				<td>Minnie</td>
+				<td>Mouse</td>
+				<td>0000</td>
+				<td>10000002</td>
+				<td>20130810</td>
+				</tr>
+			
+				<tr>
+				<td>Mighty</td>
+				<td>Mouse</td>
+				<td>0000</td>
+				<td>10000003</td>
+				<td>20130810</td>
+				</tr>
+			
+				<tr>
+				<td>Door</td>
+				<td>Mouse</td>
+				<td>0000</td>
+				<td>10000004</td>
+				<td>20180810</td>
+				</tr>
+			
+			</table>
+			
+			<p>
+				<span>In Figure 2.2, Minnie Mouse renewed the family membership with Science World. Everyone with membership ID#100755  lives at 8932 Rodent Lane. The individual members are Mickey Mouse, Minnie Mouse, Mighty Mouse, Door Mouse, Tom Mouse, King Rat, Man Mouse and Moose Mouse.</span>
+			</p>
+	
+			<br/><br/>
+		
+			<h2 class="section-title">Database Management System</h2>
+		
+			<p>
+				<span><i>A database management system</i></span> <abbr title="A database management system">(DBMS)</abbr> is a collection of programs that enables users to create and maintain databases and control all access to them. The primary goal of a DBMS is to provide an environment that is both convenient and efficient for users to retrieve and store information.
+
+				With the database approach, we can have the traditional banking system as shown in Figure 2.3. In this bank example, a DBMS is used by the Personnel Department, the Account Department and the Loan Department to access the shared corporate database.
+			</p>
+			<figure>
+				<img src="https://opentextbc.ca/dbdesign01/wp-content/uploads/sites/11/2013/12/Banking-Systems-RDBMS-300x1951.jpg">
+				<figcaption>
+					<small><i>2.3. A bank database management system (DBMS).</i></small>
+				</figcaption>
+			</figure>
+		
+			<br/>
+			
+			<div><p id="summary"><i>Key Terms</i></p>
+				<div class="summary-body">
+				<p><b>data elements</b>: facts tthat represent real-world information</p>
+				<p><b>database</b>: a sjared collection of related data used to support the activities of a particular organization</p>
+				<p><b>database management system <abbr title="database management system">(DBMS)</abbr></b>: a collection of programs that enables users to create and maintain databaese and control all access to them</p>
+				<p><b>table</b>: a combination of fields</p>
+				</div>
+			</div>
+
+			<div>
+			<p id="exercise"><i>Exercises</i></p>
+				<div class="exercise-questions">	
+				<ol>
+				<li>What is a database management system (DBMS)?</li>
+				<li>What are the properties of a DBMS?</li>
+				<li>Provide three examples of a real-world database (e.g., the library contains a database of books)</li>
+				</ol>
+				</div>
+			</div>
+
+			<br/><br/>
+			
+			<h2 class="section-title">Attribution</h2>
+			<br/>
+			<div>
+			<p>This chapter of <em>Database Design</em> (including images, except as otherwise noted) is a derivative copy of <a class="nav-text" href="https://openstax.org/general/cnx-404/">Database System Concepts</a> by Nguyen Kim Anh licensed under <a class="nav-text" target="_blank" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0 license</a></p>
+			<p>The following material was written by Nelson Eng:</p>
+			<ol>
+				<li>Example under <i>Database Properties</i></li>
+				<li>Key Terms</li>
+			</ol>
+			
+			<p>The following material was weitten by Adrienne Watt:</p>
+			<ol><li>Exercises</li></ol>
+		
+			</div>
+		
+			<br/><br/>
+
+		</div>
+		
+		<footer>
+			<div id="footer">
+			<span id="license"><b>LICENSE</b></span>
+			<span id="share"><b>SHARE THIS BOOK</b></span>
+				<a class="nav-text" target="_blank" href="https://twitter.com/"><img alt="twitter" src="./images/twitter.png"></a>
+			<figure id="logo">
+				<img style="width: 70px; height: 32px" alt="images" src="https://opentextbc.ca/dbdesign01/wp-content/themes/pressbooks-book/packages/buckram/assets/images/cc-by.svg">
+			</figure>
+			<br/>
+			<p id="book-info"><a class="nav-text" href="https://opentextbc.ca/dbdesign01/">Database Design - 2nd Edition</a> by Adrienne Watt &amp; Nelson Eng is licensed under a <a class="nav-text" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where otherwise noted.</p>
+			</div>
+		</footer>
+	
+	
+		<a id="bottom"></a>
+		<p style="margin-left: 40px">Click <a class="nav-text" href="#top">here</a> to go the top of the page</p>
+	
+		<div class="bottom-border">
+		<span id="chapter1" class="border-nav-text"><small><a class="border-nav-text" href="https://opentextbc.ca/dbdesign01/chapter/chapter-1-before-the-advent-of-database-systems/">Previous:</a> Chapter 1 Before the Advent of Database Systems</small></span>
+		<span id="chapter3" class="border-nav-text"><small><a class="border-nav-text" href="https://opentextbc.ca/dbdesign01/chapter/chapter-3-characteristics-and-benefits-of-a-database/">Next:</a> Chapter 3 Characteristics and Benefits of a  Database</small></span>
+		</div>
+	
+	</body>
+
+</html>
